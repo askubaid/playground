@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --bg-color: #fdfbf7;
-  --panel-bg: rgba(255, 255, 255, 0.7);
-  --panel-border: rgba(0, 0, 0, 0.1);
-  --text-main: #1e293b;
-  --text-muted: #64748b;
-  --accent: #6d28d9;
-  --accent-hover: #5b21b6;
-  --accent-glow: rgba(109, 40, 217, 0.3);
-  --shape-x: #0284c7;
-  --shape-hx: #e11d48;
+  --bg-color: #ffffff;
+  --panel-bg: rgba(255, 255, 255, 0.95);
+  --panel-border: rgba(0, 0, 0, 0.12);
+  --text-main: #1a1a2e;
+  --text-muted: #555770;
+  --accent: #1a365d;
+  --accent-hover: #0f2440;
+  --accent-glow: rgba(26, 54, 93, 0.25);
+  --shape-x: #1a65a3;
+  --shape-hx: #c0392b;
+  --header-bg: #1a365d;
+  --header-text: #ffffff;
 }
 
 * {
@@ -24,6 +26,64 @@ body {
   background-color: var(--bg-color);
   color: var(--text-main);
   overflow: hidden;
+}
+
+/* App Header */
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 24px;
+  background: var(--header-bg);
+  color: var(--header-text);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.header-logo {
+  height: 48px;
+  width: auto;
+  border-radius: 4px;
+  background: white;
+  padding: 2px;
+}
+
+.header-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.header-title {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.header-subtitle {
+  font-size: 11px;
+  font-weight: 400;
+  opacity: 0.85;
+  margin: 0;
+}
+
+.header-credits {
+  text-align: right;
+  font-size: 11px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.header-credits strong {
+  font-weight: 600;
 }
 
 .main-wrapper {
@@ -71,7 +131,7 @@ body {
   display: flex;
   flex: 1;
   width: 100vw;
-  background-image: radial-gradient(circle at 50% -20%, #fef3c7 0%, var(--bg-color) 70%);
+  background-image: radial-gradient(circle at 50% -20%, #f0f4f8 0%, var(--bg-color) 70%);
   overflow: hidden;
 }
 

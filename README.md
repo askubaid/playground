@@ -1,16 +1,82 @@
-# React + Vite
+# Homogeneous Transformation Playground
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+An interactive web application for visualizing and understanding **homogeneous transformations** in both 2D and 3D space. Built as a learning tool for Computer Vision concepts.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [https://askubaid.github.io/playground](https://askubaid.github.io/playground)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## About
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This application provides a visual, hands-on approach to learning homogeneous coordinate transformations — a foundational concept in Computer Vision, Robotics, and Computer Graphics. Users can interactively manipulate transformation matrices and observe their effects on geometric shapes in real time.
 
-## Expanding the Oxlint configuration
+### Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- **2D Transformations** — Define a shape using homogeneous coordinates (x, y, w) and apply a 3×3 transformation matrix (H) with interactive sliders and knobs for rotation, scaling, and translation.
+- **3D Transformations** — Extend to 3D with a 4×4 transformation matrix supporting Euler angle rotations (Alpha, Beta, Gamma), scaling, and translation, with isometric projection visualization.
+- **Real-Time Visualization** — See original and transformed shapes side-by-side on an interactive SVG canvas with panning support.
+- **Matrix Editor** — Directly edit transformation matrix values or use intuitive controls (rotation knobs, scale sliders).
+- **Dynamic Shape Building** — Add/remove points to build custom shapes.
+- **Transformed Output Display** — View the resulting transformed matrix (X') values in real time.
+
+---
+
+## Technology Stack
+
+- **React 19** — UI framework
+- **Vite** — Build tool and dev server
+- **Lucide React** — Icon library
+- **SVG** — Canvas rendering
+- **GitHub Pages** — Deployment
+
+---
+
+## Developed By
+
+**Ubaid Ur Rehman**  
+MS Scholar — Subject: Computer Vision  
+Institute of Space Technology (IST), Islamabad
+
+### Supervised By
+
+**Dr. Benish Amin**  
+Institute of Space Technology (IST), Islamabad
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or later)
+- npm
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/askubaid/playground.git
+cd playground
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+### Build & Deploy
+
+```bash
+# Build for production
+npm run build
+
+# Deploy to GitHub Pages
+npm run deploy
+```
+
+---
+
+## License
+
+This project is developed for academic purposes at the Institute of Space Technology, Islamabad.
