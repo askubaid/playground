@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- IST Logo Placeholder - Replace with actual IST logo -->
+  <circle cx="100" cy="100" r="95" fill="none" stroke="#1a365d" stroke-width="4"/>
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#1a365d" stroke-width="2"/>
+  <!-- Star/Satellite orbit -->
+  <ellipse cx="100" cy="100" rx="60" ry="20" fill="none" stroke="#2563eb" stroke-width="2" transform="rotate(-30 100 100)"/>
+  <ellipse cx="100" cy="100" rx="60" ry="20" fill="none" stroke="#2563eb" stroke-width="2" transform="rotate(30 100 100)"/>
+  <ellipse cx="100" cy="100" rx="60" ry="20" fill="none" stroke="#2563eb" stroke-width="2" transform="rotate(90 100 100)"/>
+  <!-- Central dot -->
+  <circle cx="100" cy="100" r="8" fill="#1a365d"/>
+  <!-- IST Text -->
+  <text x="100" y="175" text-anchor="middle" font-family="serif" font-size="24" font-weight="bold" fill="#1a365d">IST</text>
+</svg>
