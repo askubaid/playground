@@ -12,7 +12,7 @@ export default function App() {
       <header className="app-header">
         <div className="header-left">
           <img
-            src={`${import.meta.env.BASE_URL}ist-logo.svg`}
+            src={`${import.meta.env.BASE_URL}IST.jpg`}
             alt="IST Logo"
             className="header-logo"
           />
